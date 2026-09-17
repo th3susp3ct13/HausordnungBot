@@ -1,0 +1,19 @@
+# Rasa
+**/.rasa/
+models/
+*.tar.gz
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Node / Node-RED
+node_modules/
+package-lock.json
+.node-red/
+
+# Logs
+*.log

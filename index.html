@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hausordnung Chatbot</title>
+    <link rel="stylesheet" href="https://cdn.statically.io/gh/weberi/chatroom/master/dist/Chatroom.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.statically.io/gh/weberi/chatroom/master/index.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.statically.io/gh/weberi/chatroom/master/themes/theme2.css" />
+</head>
+<body>
+    <div class="chat-container"></div>
+    <script src="https://cdn.statically.io/gh/weberi/chatroom/master/dist/Chatroom.js"></script>
+    <script type="text/javascript">
+    // Trage hier die URL deines laufenden Rasa-Servers ein,
+    // z. B. deine GitHub-Codespace-Adresse (Port 5005) oder deinen Server.
+    var chatroom = new window.Chatroom({
+        host: "https://your-codespace-url-5005.preview.app.github.dev",
+        title: "Hausordnung Chatbot",
+        container: document.querySelector(".chat-container"),
+        welcomeMessage: "Hallo! Frag mich etwas zur Hausordnung unserer Schule.",
+        speechRecognition: "de-DE",
+        voiceLang: "de-DE"
+    });
+    chatroom.openChat();
+    </script>
+</body>
+</html>

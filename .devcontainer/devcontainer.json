@@ -1,0 +1,27 @@
+{
+	"name": "Python 3",
+	"image": "mcr.microsoft.com/devcontainers/python:1-3.10-bullseye",
+	"features": {
+		"ghcr.io/devcontainers/features/node:1": {
+			"version": "lts"  // This installs Node.js LTS version
+		}
+	},
+	"forwardPorts": [5005, 1880],
+	"onCreateCommand": "npm install -g node-red; npm install node-red-contrib-rasa-actionserver; pip install -U pip; python -m venv .venv; . .venv/bin/activate || .venv\\Scripts\\activate.bat; pip install rasa==3.6.20",
+	"postAttachCommand": ". .venv/bin/activate || .venv\\Scripts\\activate.bat",
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"python.terminal.activateEnvInCurrentTerminal": true,
+				"python.defaultInterpreterPath": ".venv/bin/python"
+			},
+			"extensions": [
+				"redhat.vscode-yaml"
+			]
+		}
+	},
+	"remoteEnv": {
+		"MAX_NUMBER_OF_PREDICTIONS": "50"
+	},
+	"remoteUser": "root"
+}

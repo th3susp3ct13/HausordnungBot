@@ -1,0 +1,126 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - thanks
+  - bot_challenge
+  - ask_verhalten
+  - ask_sprache
+  - ask_anwesenheitspflicht
+  - ask_entschuldigungsgruende
+  - ask_puenktlichkeit
+  - ask_schule_verlassen
+  - ask_handys_gegenstaende
+  - ask_rauchen
+  - ask_inventar_schaden
+  - ask_verschmutzung
+  - ask_feueralarm
+  - ask_funktionsraeume
+  - ask_computerraum
+  - ask_essen_unterricht
+  - ask_turnsaal
+  - ask_klassenzimmer_verlassen
+  - ask_wertgegenstaende
+  - ask_konsequenzen
+  - ask_wiedergutmachung
+
+responses:
+  utter_greet:
+    - text: "Hallo! Ich bin der Hausordnungs-Bot der Schule. Frag mich einfach etwas zur Hausordnung, z. B. zu Handys, Fehlstunden, Pünktlichkeit oder dem Computerraum."
+
+  utter_goodbye:
+    - text: "Auf Wiedersehen! Bei weiteren Fragen bin ich jederzeit hier."
+
+  utter_thanks:
+    - text: "Gerne! Wenn du noch etwas zur Hausordnung wissen willst, frag einfach."
+
+  utter_bot_challenge:
+    - text: "Ich bin ein Chatbot und beantworte Fragen zur Hausordnung unserer Schule. Für alles Weitere wende dich bitte ans Sekretariat oder deine Klassenvorständin/deinen Klassenvorstand."
+
+  utter_ask_verhalten:
+    - text: "Alle Schülerinnen/Schüler müssen sich so benehmen, dass die Rechte der Lehrpersonen und Mitschüler/innen gewahrt bleiben und ein störungsfreier Unterricht möglich ist. Dazu gehören Gewaltlosigkeit, Toleranz, Höflichkeit (gegenseitiges Grüßen) und passende Kleidung. (Punkt 1 der Hausordnung)"
+
+  utter_ask_sprache:
+    - text: "Wenn mehrere Personen an einem Gespräch beteiligt sind, sollte eine gemeinsame Sprache verwendet werden, damit alle mitreden können – das gilt als Zeichen der Höflichkeit. (Punkt 2)"
+
+  utter_ask_anwesenheitspflicht:
+    - text: "Die Anwesenheit im Unterricht, bei Schulveranstaltungen, Förderkursen und gewählten Freigegenständen ist Pflicht. Unentschuldigte Fehlstunden wirken sich negativ auf die Verhaltensnote aus. Die Entschuldigung muss bei der Klassenvorständin/dem Klassenvorstand abgegeben werden, sobald man wieder am Unterricht teilnimmt. (Punkt 3)"
+
+  utter_ask_entschuldigungsgruende:
+    - text: |-
+        Als Rechtfertigungsgründe für eine Abwesenheit gelten laut Schulpflichtgesetz § 9 (3):
+        • Erkrankung der Schülerin/des Schülers
+        • ansteckende Erkrankung von Hausangehörigen
+        • Erkrankung der Eltern oder anderer Angehöriger, wenn diese Hilfe benötigen
+        • außergewöhnliche Ereignisse in Familie oder Hauswesen
+        • unpassierbarer Schulweg oder schlechte Witterung, wenn die Gesundheit gefährdet ist
+        • Fahrschulprüfungen (nicht die Fahrstunden selbst)
+
+  utter_ask_puenktlichkeit:
+    - text: "Pünktlichkeit ist verpflichtend, besonders zu Unterrichtsbeginn und nach den Pausen. Bei mehrmaligem Zuspätkommen gibt es nach drei Vorfällen eine Klassenbucheintragung sowie im Wiederholungsfall eine Verhaltensvereinbarung mit der Klassenvorständin/dem Klassenvorstand. (Punkt 4)"
+
+  utter_ask_schule_verlassen:
+    - text: |-
+        Das Schulgebäude darf während der Unterrichtszeit und in den Pausen grundsätzlich nicht verlassen werden. Ausnahmen (Punkt 5):
+        • mit einem Dauerpassierschein für Freistunden
+        • Minderjährige: mit Entschuldigung und Passierschein aus dem Sekretariat, in akuten Fällen mit Passierschein und telefonischer Rücksprache mit einer/einem Erziehungsberechtigten – abgeholt werden muss man in akuten Fällen ebenfalls von dieser Person
+        • Volljährige: mit Vorliegen einer Entschuldigung, ohne Passierschein
+
+  utter_ask_handys_gegenstaende:
+    - text: "Sicherheitsgefährdende Gegenstände dürfen gar nicht mitgebracht werden. Handys und Unterhaltungselektronik dürfen den Unterricht nicht stören und müssen während des Unterrichts außer Sicht- und Hörweite sein. Auf Verlangen der Lehrperson müssen störende Gegenstände abgegeben werden; sie werden zurückgegeben, wenn keine weitere Störung mehr zu erwarten ist. Sicherheitsgefährdende Gegenstände werden nur an Erziehungsberechtigte ausgehändigt. (Punkt 6)"
+
+  utter_ask_rauchen:
+    - text: "Rauchen ist im gesamten Schulgebäude ausnahmslos verboten. (Punkt 7)"
+
+  utter_ask_inventar_schaden:
+    - text: "Das Schulinventar ist schonend und nur für den vorgesehenen Zweck zu nutzen. Bei Missachtung von Sicherheitsvorschriften kann ein Unterrichtsausschluss erfolgen. Für mutwillige Beschädigungen (z. B. Missbrauch des Lifts) haftet man in vollem Umfang. (Punkt 8)"
+
+  utter_ask_verschmutzung:
+    - text: "Wer für grobe Verschmutzungen (z. B. Graffiti, Wandbeschmierungen) oder Beschädigungen von Klassenmobiliar verantwortlich ist, muss diese auf eigene Kosten beseitigen. Klassenordner/innen sollen zudem darauf achten, das Klassenzimmer aufgeräumt zu hinterlassen. (Punkt 9)"
+
+  utter_ask_feueralarm:
+    - text: "Ein ungerechtfertigtes Auslösen des Feueralarms führt zur sofortigen Abmeldung des Schülers/der Schülerin. (Punkt 10)"
+
+  utter_ask_funktionsraeume:
+    - text: "In Funktionsräume wie Computerräume, den Physiksaal, Übungsfirmen und den Turnsaal dürfen keine Lebensmittel und Getränke mitgenommen werden. (Punkt 11)"
+
+  utter_ask_computerraum:
+    - text: |-
+        Für den Computerraum gilt eine eigene Computerraumordnung:
+        • Ohne Aufsicht wird der Raum in den Pausen abgeschlossen.
+        • Die Ausstattung ist schonend und nur zweckgemäß zu nutzen – für Schäden haftet man voll.
+        • Mängel an Gerät oder Arbeitsplatz sind sofort der Lehrperson zu melden.
+        • Essen und Trinken sind untersagt.
+        • Vor dem Verlassen ist der Arbeitsplatz aufzuräumen.
+        • Fremdsoftware darf nicht installiert werden.
+
+  utter_ask_essen_unterricht:
+    - text: "Essen ist während des Unterrichts generell nicht gestattet. (Punkt 12)"
+
+  utter_ask_turnsaal:
+    - text: "Der Turnsaal darf nur mit flachen Turnschuhen betreten werden, die noch nie im Freien getragen wurden. Geeignete Sportbekleidung ist selbst mitzubringen. (Punkt 13)"
+
+  utter_ask_klassenzimmer_verlassen:
+    - text: "Klassenzimmer müssen nach Unterrichtsende aufgeräumt hinterlassen werden, damit andere Klassen den Raum nutzen können und die Reinigung möglich ist. Abfälle gehören in die vorgesehenen Behälter. (Punkt 14)"
+
+  utter_ask_wertgegenstaende:
+    - text: "Für mitgebrachte Wertgegenstände übernimmt die Schule keine Haftung. Geld oder wertvolle Gegenstände sollten daher nicht unbeaufsichtigt im Klassenraum liegen gelassen werden. (Punkt 15)"
+
+  utter_ask_konsequenzen:
+    - text: "Verstöße gegen die Hausordnung führen zunächst zu Zurechtweisungen, im Wiederholungsfall zu belehrenden Gesprächen, die im elektronischen Klassenbuch (EKB) vermerkt werden und die Verhaltensnote sowie ggf. Verhaltensvereinbarungen beeinflussen. Bei groben oder häufig wiederholten Verstößen kann laut Privatschulgesetz der Ausbildungsvertrag nicht verlängert oder gelöst werden – besonders bei bedingt aufgenommenen Schülerinnen/Schülern. (Punkt 16)"
+
+  utter_ask_wiedergutmachung:
+    - text: |-
+        Stimmen alle Beteiligten zu, kann statt einer Konsequenz auch eine Wiedergutmachung erfolgen, zum Beispiel:
+        • Teilnahme an einer Mediation bei einem Streit
+        • Nacharbeiten versäumter Zeit durch Arbeiten für die Schulgemeinschaft bei Zuspätkommen
+        • Selbst beseitigen von Verunreinigungen/Schäden bzw. Mithilfe bei ähnlichen Fällen
+        • Die Klassenvorständin/der Klassenvorstand kann zu Schuljahresbeginn positive Verhaltensvereinbarungen mit der Klasse treffen
+
+  utter_default:
+    - text: "Dazu habe ich leider keine passende Information in der Hausordnung gefunden. Bitte wende dich an das Sekretariat oder deine Klassenvorständin/deinen Klassenvorstand."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

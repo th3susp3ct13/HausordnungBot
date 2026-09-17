@@ -1,0 +1,224 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hallo
+    - hi
+    - servus
+    - guten tag
+    - hey
+    - hallo bot
+    - grüß dich
+    - moin
+
+- intent: goodbye
+  examples: |
+    - tschüss
+    - auf wiedersehen
+    - bis dann
+    - ciao
+    - bye
+    - man sieht sich
+    - danke, das wars
+
+- intent: thanks
+  examples: |
+    - danke
+    - vielen dank
+    - super, danke dir
+    - danke für die info
+    - dankeschön
+    - passt, danke
+
+- intent: bot_challenge
+  examples: |
+    - bist du ein bot?
+    - bist du ein mensch?
+    - rede ich mit einem echten menschen?
+    - bist du eine KI?
+    - wer bist du?
+    - was bist du?
+
+- intent: ask_verhalten
+  examples: |
+    - wie muss ich mich in der schule benehmen
+    - wie soll ich mich verhalten
+    - gibt es regeln zum benehmen
+    - muss ich mich höflich verhalten
+    - was steht zum verhalten in der hausordnung
+    - muss ich mich passend kleiden
+    - gibt es eine kleiderordnung
+    - was gilt für den umgang miteinander
+    - muss man sich grüßen
+    - ist gewalt erlaubt
+
+- intent: ask_sprache
+  examples: |
+    - welche sprache muss ich in der schule sprechen
+    - darf ich meine muttersprache sprechen
+    - gibt es regeln zur sprache im unterricht
+    - muss ich deutsch sprechen mit mitschülern
+    - was gilt bei gesprächen mit mehreren personen
+    - warum soll man eine gemeinsame sprache sprechen
+
+- intent: ask_anwesenheitspflicht
+  examples: |
+    - muss ich immer in den unterricht kommen
+    - ist die anwesenheit pflicht
+    - was passiert wenn ich unentschuldigt fehle
+    - wo muss ich eine entschuldigung abgeben
+    - wann muss ich die entschuldigung abgeben
+    - ist der förderkurs pflicht
+    - muss ich bei schulveranstaltungen dabei sein
+    - was passiert bei unentschuldigten fehlstunden
+    - wer nimmt meine entschuldigung entgegen
+    - ist anwesenheit im freigegenstand pflicht
+
+- intent: ask_entschuldigungsgruende
+  examples: |
+    - welche gründe für abwesenheit sind erlaubt
+    - wann darf ich fehlen
+    - was sind gültige entschuldigungsgründe
+    - zählt krankheit als entschuldigung
+    - darf ich wegen krankheit der eltern fehlen
+    - zählt schlechtes wetter als entschuldigung
+    - darf ich für die fahrschulprüfung fehlen
+    - darf ich für fahrstunden fehlen
+    - was sagt das schulpflichtgesetz zu fehlstunden
+    - welche rechtfertigungsgründe gibt es laut gesetz
+
+- intent: ask_puenktlichkeit
+  examples: |
+    - muss ich pünktlich sein
+    - was passiert wenn ich zu spät komme
+    - was sind die folgen bei zuspätkommen
+    - wie oft darf ich zu spät kommen
+    - gibt es eine strafe für zuspätkommen
+    - was ist eine verhaltensvereinbarung
+    - trägt man zuspätkommen ins klassenbuch ein
+    - muss ich nach der pause pünktlich sein
+
+- intent: ask_schule_verlassen
+  examples: |
+    - darf ich während der pause das schulgebäude verlassen
+    - darf ich in der freistunde nach hause gehen
+    - was ist ein passierschein
+    - wie bekomme ich einen dauerpassierschein
+    - darf ich als minderjähriger das schulgebäude verlassen
+    - darf ich als volljähriger das schulgebäude verlassen
+    - muss mich jemand abholen wenn ich krank werde
+    - wer holt mich ab wenn ich minderjährig bin und krank werde
+    - kann ich während der unterrichtszeit rausgehen
+
+- intent: ask_handys_gegenstaende
+  examples: |
+    - darf ich mein handy benutzen
+    - wo muss ich mein handy während des unterrichts aufbewahren
+    - was passiert wenn mein handy den unterricht stört
+    - darf die lehrperson mein handy wegnehmen
+    - bekomme ich mein handy zurück
+    - welche gegenstände sind verboten
+    - was sind sicherheitsgefährdende gegenstände
+    - darf ich unterhaltungselektronik mitbringen
+    - wer bekommt mein handy wenn es abgenommen wird
+    - darf ich ein messer mitbringen
+
+- intent: ask_rauchen
+  examples: |
+    - darf ich in der schule rauchen
+    - ist rauchen im schulgebäude erlaubt
+    - gibt es einen raucherbereich
+    - darf ich am schulgelände rauchen
+    - ist e-zigarette rauchen erlaubt in der schule
+
+- intent: ask_inventar_schaden
+  examples: |
+    - was passiert wenn ich etwas in der schule kaputt mache
+    - muss ich für schäden am inventar zahlen
+    - was ist wenn ich den lift missbrauche
+    - haftet die schule für schäden
+    - was passiert bei mutwilliger beschädigung
+    - darf ich schulmaterial zweckfremd verwenden
+
+- intent: ask_verschmutzung
+  examples: |
+    - was passiert wenn ich graffiti sprühe
+    - muss ich verschmutzungen selbst putzen
+    - wer zahlt für beschädigte stühle
+    - was passiert bei wandbeschmierungen
+    - muss der klassenordner das klassenzimmer aufräumen
+    - wer ist für saubere klassenzimmer verantwortlich
+
+- intent: ask_feueralarm
+  examples: |
+    - was passiert wenn ich den feueralarm grundlos auslöse
+    - darf ich zum spaß den feueralarm auslösen
+    - welche konsequenzen hat ein falscher feueralarm
+    - werde ich von der schule geworfen wenn ich den feueralarm missbrauche
+
+- intent: ask_funktionsraeume
+  examples: |
+    - darf ich essen in den turnsaal mitnehmen
+    - darf ich getränke in den physiksaal mitnehmen
+    - welche regeln gelten in funktionsräumen
+    - darf ich essen mit in die übungsfirma nehmen
+    - was gilt für lebensmittel in speziellen räumen
+
+- intent: ask_computerraum
+  examples: |
+    - welche regeln gelten im computerraum
+    - darf ich essen und trinken im computerraum
+    - wird der computerraum abgeschlossen
+    - was mache ich wenn ein computer kaputt ist
+    - darf ich eigene software installieren
+    - muss ich den arbeitsplatz aufräumen im computerraum
+    - wer haftet für schäden im computerraum
+    - was ist die computerraumordnung
+
+- intent: ask_essen_unterricht
+  examples: |
+    - darf ich während des unterrichts essen
+    - ist essen im klassenzimmer erlaubt
+    - darf ich im unterricht etwas trinken
+    - darf ich kaugummi kauen im unterricht
+
+- intent: ask_turnsaal
+  examples: |
+    - welche schuhe brauche ich für den turnsaal
+    - darf ich mit straßenschuhen in den turnsaal
+    - was muss ich für den sportunterricht mitbringen
+    - brauche ich spezielle sportkleidung
+    - welche regeln gelten im turnsaal
+
+- intent: ask_klassenzimmer_verlassen
+  examples: |
+    - muss ich das klassenzimmer aufräumen
+    - was mache ich mit dem müll im klassenzimmer
+    - muss der raum sauber sein wenn ich gehe
+    - wer räumt das klassenzimmer nach dem unterricht auf
+
+- intent: ask_wertgegenstaende
+  examples: |
+    - haftet die schule wenn mir etwas gestohlen wird
+    - was mache ich mit wertsachen im klassenzimmer
+    - darf ich geld im klassenraum liegen lassen
+    - übernimmt die schule haftung für mein handy wenn es gestohlen wird
+
+- intent: ask_konsequenzen
+  examples: |
+    - was passiert wenn ich gegen die hausordnung verstoße
+    - welche konsequenzen gibt es bei regelverstößen
+    - kann ich von der schule ausgeschlossen werden
+    - was ist ein eintrag im ekb
+    - beeinflusst ein verstoß meine verhaltensnote
+    - kann mein ausbildungsvertrag gelöst werden
+    - was passiert bei wiederholten verstößen
+
+- intent: ask_wiedergutmachung
+  examples: |
+    - kann ich eine strafe durch wiedergutmachung ersetzen
+    - was ist eine mediation bei streit
+    - kann ich statt strafe etwas für die schule arbeiten
+    - kann ich einen schaden selbst wiedergutmachen
+    - was sind positive verhaltensvereinbarungen

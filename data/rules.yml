@@ -1,0 +1,122 @@
+version: "3.1"
+
+rules:
+- rule: Begrüßung
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Verabschiedung
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Danksagung
+  steps:
+  - intent: thanks
+  - action: utter_thanks
+
+- rule: Bot-Frage
+  steps:
+  - intent: bot_challenge
+  - action: utter_bot_challenge
+
+- rule: Verhalten
+  steps:
+  - intent: ask_verhalten
+  - action: utter_ask_verhalten
+
+- rule: Sprache
+  steps:
+  - intent: ask_sprache
+  - action: utter_ask_sprache
+
+- rule: Anwesenheitspflicht
+  steps:
+  - intent: ask_anwesenheitspflicht
+  - action: utter_ask_anwesenheitspflicht
+
+- rule: Entschuldigungsgründe
+  steps:
+  - intent: ask_entschuldigungsgruende
+  - action: utter_ask_entschuldigungsgruende
+
+- rule: Pünktlichkeit
+  steps:
+  - intent: ask_puenktlichkeit
+  - action: utter_ask_puenktlichkeit
+
+- rule: Schule verlassen
+  steps:
+  - intent: ask_schule_verlassen
+  - action: utter_ask_schule_verlassen
+
+- rule: Handys und Gegenstände
+  steps:
+  - intent: ask_handys_gegenstaende
+  - action: utter_ask_handys_gegenstaende
+
+- rule: Rauchen
+  steps:
+  - intent: ask_rauchen
+  - action: utter_ask_rauchen
+
+- rule: Inventar und Schaden
+  steps:
+  - intent: ask_inventar_schaden
+  - action: utter_ask_inventar_schaden
+
+- rule: Verschmutzung
+  steps:
+  - intent: ask_verschmutzung
+  - action: utter_ask_verschmutzung
+
+- rule: Feueralarm
+  steps:
+  - intent: ask_feueralarm
+  - action: utter_ask_feueralarm
+
+- rule: Funktionsräume
+  steps:
+  - intent: ask_funktionsraeume
+  - action: utter_ask_funktionsraeume
+
+- rule: Computerraum
+  steps:
+  - intent: ask_computerraum
+  - action: utter_ask_computerraum
+
+- rule: Essen im Unterricht
+  steps:
+  - intent: ask_essen_unterricht
+  - action: utter_ask_essen_unterricht
+
+- rule: Turnsaal
+  steps:
+  - intent: ask_turnsaal
+  - action: utter_ask_turnsaal
+
+- rule: Klassenzimmer verlassen
+  steps:
+  - intent: ask_klassenzimmer_verlassen
+  - action: utter_ask_klassenzimmer_verlassen
+
+- rule: Wertgegenstände
+  steps:
+  - intent: ask_wertgegenstaende
+  - action: utter_ask_wertgegenstaende
+
+- rule: Konsequenzen
+  steps:
+  - intent: ask_konsequenzen
+  - action: utter_ask_konsequenzen
+
+- rule: Wiedergutmachung
+  steps:
+  - intent: ask_wiedergutmachung
+  - action: utter_ask_wiedergutmachung
+
+- rule: Fallback
+  steps:
+  - intent: nlu_fallback
+  - action: utter_default
